@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --header-bg: #10375c;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+
+/* ============================== common =============================== */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  color: #fff;
+  background: #2e80ce;
+  border-radius: 999px;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.89;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/* ============================== header =============================== */
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 8px 21px;
+}
+
+.navbar__link--active,
+.navbar__link:hover,
+.header__action--login:hover {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  right: 8px;
+}
+
+.header__action--login {
+  margin-right: 7px;
+}
+
+.header__action--signup {
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-width: 104px;
+  line-height: 44px;
+}
